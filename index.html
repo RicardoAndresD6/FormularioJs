@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DOM</title>
+
+  <script type="text/javascript" src="main.js"></script>
+
+
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="bg-white shadow px-4 py-5 sm:rounded-lg sm:p-6">
+    <div class="md:grid md:grid-cols-3 md:gap-6">
+
+
+      <div class="md:grid md:grid-cols-3 md:gap-6">
+        <div class="md:col-span-1">
+          <h3 class="text-lg font-medium leading-6 text-gray-900">Información personal</h3>
+          <p class="mt-1 text-sm leading-5 text-gray-500">
+            Solo de uso interno del centro médico. No compartiremos su información personal con terceros.
+          </p>
+        </div>
+        <div class="mt-5 md:mt-0 md:col-span-2">
+          <form action="#" method="POST" name="form"  onsubmit="return validation()">
+            <div class="grid grid-cols-6 gap-6">
+              <div class="col-span-6 sm:col-span-3">
+                <label for="nombres" class="block text-sm font-medium leading-5 text-gray-700">Nombres</label>
+
+                <input type="text" name="nombres" placeholder="Donald "class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                <div class="error" id="nameErr"></div>
+
+              </div>
+
+              <div class="col-span-6 sm:col-span-3">
+                <label for="apellidos" class="block text-sm font-medium leading-5 text-gray-700">Apellidos</label>
+                <input name="apellidos" placeholder=" Jhon Trump"
+                  class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+              </div>
+
+
+              <div class="col-span-6">
+                <label for="rut" class="block text-sm font-medium leading-5 text-gray-700">Rut</label>
+                <input name="rut" placeholder="17892472-k"
+                  class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+              </div>
+
+              <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                <label for="edad" class="block text-sm font-medium leading-5 text-gray-700">Edad</label>
+                <input name="edad" placeholder="76"
+                  class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                  <p id="demo"></p>
+
+              </div>
+
+
+              <div class="col-span-6 sm:col-span-4">
+                <label for="email" class="block text-sm font-medium leading-5 text-gray-700">Email</label>
+                <input name="email" placeholder="the.donald@big-boss.us"
+                  class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+              </div>
+
+              <div class="col-span-6 sm:col-span-3">
+                <label for="especialidad" class="block text-sm font-medium leading-5 text-gray-700">Especialidad</label>
+                <select name="especialidad"
+                  class="mt-1 block form-select w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                  <option>Dermatología</option>
+                  <option>Psiquiatría</option>
+                  <option>Traumatología</option>
+                  <option>Geriatría</option>
+
+                </select>
+              </div>
+
+
+
+
+
+              <div class="col-span-10 sm:col-span-6 lg:col-span-4">
+                <label  class="block text-sm font-medium leading-5 text-gray-700">Fecha</label>
+                <input type = "date" name="fecha"
+                  class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+              </div>
+
+
+              <div class="col-span-4 sm:col-span-3">
+                <label for="hora" class="block text-sm font-medium leading-5 text-gray-700">Hora</label>
+                <select id="hora"
+                  class="mt-1 block form-select w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                  <option>10:00</option>
+                  <option>10:30</option>
+                  <option>11:00</option>
+                  <option>11:30</option>
+                  <option>12:00</option>
+
+
+                </select>
+              </div>
+
+
+
+
+            </div>
+
+            <input class="p-5 bg-white hover:bg-gray-100 text-gray-800 font-semibold  border border-gray-400 rounded shadow" type="submit" value="Reservar">
+
+
+
+
+
+
+
+
+          </form>
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
